@@ -1,0 +1,80 @@
+# 1 esep
+# n = int(input("Сөздік өлшемін енгізіңіз: "))
+# rivers = {}
+# for i in range(n):
+#     country, river = input().split()
+#     rivers[river] = country
+# print("Өзеннің атын енгізіңіз::")
+# search_rivers = input().split()
+# for river in search_rivers:
+#     if river in rivers:
+#         print(f"Өзен {river} бүкіл ел бойынша ағып өтеді {rivers[river]}")
+#     else:
+#         print(f"{river} өзені тізімде табылған жоқ")
+
+# new_river = input("Қосқыңыз келетін өзеннің атын енгізіңіз: ")
+# if new_river in rivers:
+#     print(f" {new_river}өзені қазірдің өзінде сөздікте бар!")
+# else:
+#     new_country = input(
+#         f"{new_river} өзені ағып жатқан елге жазыңыз: ")
+#     rivers[new_river] = new_country
+#     print(f"{new_river}  өзені сәтті қосылды!!!")
+# print("Сөздік жаңартылды:")
+# for river, country in rivers.items():
+#     print(f"{country}: {river}")
+
+
+# 2 esep
+# commentators = set()
+# while True:
+#     line = input()
+#     if line == "":
+#         break
+#     name, comment = line.split(": ")
+#     commentators.add(name)
+# print("Коменттер:", len(commentators))
+# print("jana commentator")
+
+# new_river = input("Қосқыңыз келетін өзеннің атын енгізіңіз: ")
+# if new_river in rivers:
+#     print(f" {new_river}өзені қазірдің өзінде сөздікте бар!")
+# else:
+#     new_country = input(
+#         f"{new_river} өзені ағып жатқан елге жазыңыз: ")
+#     rivers[new_river] = new_country
+#     print(f"{new_river}  өзені сәтті қосылды!!!")
+# print("Сөздік жаңартылды:")
+# for river, country in rivers.items():
+#     print(f"{country}: {river}")
+
+
+# 3 esep
+# n = int(input("Телефон санын енгізіңіз:"))
+# phone_book = {}
+# for i in range(n):
+#     phone, name = input().split()
+#     phone_book[name] = phone
+
+# query = input("Контакты:")
+# if query in phone_book:
+#     print(phone_book[query])
+# else:
+#     print("Контактыда жоқ")
+
+
+# 4 esep
+# n = int(input("Сөздік өлшемін енгізіңіз:"))
+# vacation_schedule = {}
+# for i in range(n):
+#     name, day, month = input().split()
+#     if month not in vacation_schedule:
+#         vacation_schedule[month] = []
+#     vacation_schedule[month].append(name)
+
+
+# requested_month = input("Сұралған ай:")
+# if requested_month in vacation_schedule:
+#     print(" ".join(vacation_schedule[requested_month]))
+# else:
+#     print()

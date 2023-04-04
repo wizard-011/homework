@@ -1,0 +1,21 @@
+import socket
+
+from googletrans import Translator
+
+def text_translator(text='Hello friend', src='ru', dest='ru'):
+    try:
+        translator = Translator()
+        translation = translator.translator.translate(
+            text=text, src=src, dest=dest)
+
+        return translation.text
+    except Exception as ex:
+        return ex
+
+def main():
+    print(text_translator(text="Hello", src='en', dest='en'))
+
+
+if __name__ == '__name__':
+    main()
+
